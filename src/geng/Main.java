@@ -1,9 +1,6 @@
 package geng;
 
-import geng.charpter1.body.Flip;
-import geng.charpter1.body.Gambler;
-import geng.charpter1.body.Harmonic;
-import geng.charpter1.body.SquareRoot;
+import geng.charpter1.body.*;
 
 public class Main {
 
@@ -19,5 +16,8 @@ public class Main {
 
         // Gambler
 //        Gambler gambler = new Gambler(1,0,10,100);
+
+        // Factors
+        Factors factors = new Factors(3757208);
     }
 }
