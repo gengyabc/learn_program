@@ -18,6 +18,9 @@ public class Main {
 //        Gambler gambler = new Gambler(1,0,10,100);
 
         // Factors
-        Factors factors = new Factors(3757208);
+//        Factors factors = new Factors(3757208);
+
+        Cards cards = new Cards();
+        cards.couponCollector(5);
     }
 }
