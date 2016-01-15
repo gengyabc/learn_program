@@ -20,7 +20,9 @@ public class Main {
         // Factors
 //        Factors factors = new Factors(3757208);
 
-        Cards cards = new Cards();
-        cards.couponCollector(5);
+//        Cards cards = new Cards();
+//        cards.couponCollector(5);
+
+        PrimeSieve primeSieve = new PrimeSieve(100);
     }
 }
