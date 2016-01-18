@@ -2,6 +2,7 @@ package geng;
 
 import geng.charpter1.body.*;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -23,6 +24,9 @@ public class Main {
 //        Cards cards = new Cards();
 //        cards.couponCollector(5);
 
-        PrimeSieve primeSieve = new PrimeSieve(100);
+//        PrimeSieve primeSieve = new PrimeSieve(100);
+
+        SelfAvoidingWalk selfAvoidingWalk = new SelfAvoidingWalk(20, 100);
+        selfAvoidingWalk.walkOut();
     }
 }
