@@ -58,11 +58,11 @@ public class SelfAvoidingWalk {
                 if ( X == 0 || X == mCitySize -1 || Y == 0 || Y == mCitySize-1 ) {
                     isOut = true;
                     NumSuccess ++;
+                    // to Avoid following code throw error, there must be a break here.
                     break;
                 }
                 if ( mCity[X-1][Y] && mCity[X+1][Y] && mCity[X][Y-1] && mCity[X][Y+1]) {
                     isTrapped = true;
-                    break;
                 }
             }
         }

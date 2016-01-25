@@ -1,6 +1,6 @@
 package geng;
 
-import geng.charpter1.body.*;
+import geng.charpter1.exercises.ArrayExercises;
 
 
 public class Main {
@@ -26,7 +26,23 @@ public class Main {
 
 //        PrimeSieve primeSieve = new PrimeSieve(100);
 
-        SelfAvoidingWalk selfAvoidingWalk = new SelfAvoidingWalk(20, 100);
-        selfAvoidingWalk.walkOut();
+//        SelfAvoidingWalk selfAvoidingWalk = new SelfAvoidingWalk(20, 100);
+//        selfAvoidingWalk.walkOut();
+
+        ArrayExercises a = new ArrayExercises();
+//        a.oneD();
+//        a.putWhat(10);
+//        a.copy2DArray();
+//        a.tranposition();
+//        a.relativePrime(8, 10);
+//        a.booleanArrayProduct();
+//        a.dice(10);
+//        a.longestPlateau();
+//        a.hadamardMatrix(3);
+//        a.rumorPropagation(100);
+//        a.findDuplicates(10);
+//        a.mineSweeper(5,5, 0.5);
+//        a.lengthOfSelfAvoid(100);
+        a.randomWalkers(10);
     }
 }
