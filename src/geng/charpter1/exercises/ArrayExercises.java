@@ -264,7 +264,7 @@ public class ArrayExercises {
     }
 
     /**
-     * 1.4.16. Print hadamard matrix of size 2^n
+     * 1.4.26. Print hadamard matrix of size 2^n
      * @param n size of the matrix is 2^n * 2^n
      */
     public void hadamardMatrix (int n) {
@@ -312,6 +312,39 @@ public class ArrayExercises {
         return large;
 
     }
+
+    /*
+    // method on the book is so simple
+    public class Hadamard {
+    public static void main(String[] args) {
+        int N = Integer.parseInt(args[0]);
+        boolean[][] H = new boolean[N][N];
+
+        // initialize Hadamard matrix of order N
+        H[0][0] = true;
+        for (int n = 1; n < N; n += n) {
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                    H[i+n][j]   =  H[i][j];
+                    H[i][j+n]   =  H[i][j];
+                    H[i+n][j+n] = !H[i][j];
+                }
+            }
+        }
+
+        // print matrix
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                if (H[i][j]) System.out.print("* ");
+                else         System.out.print(". ");
+            }
+            System.out.println();
+        }
+    }
+
+}
+
+     */
 
     // 1.4.27
     // I think this code is not what the question means...
@@ -373,6 +406,7 @@ public class ArrayExercises {
 
     }
 
+    // 1.4.28
     public void findDuplicates(int n) {
         int a[] = new int[n];
         for (int i = 0; i < n; i++) {
@@ -610,6 +644,47 @@ public class ArrayExercises {
         return true;
     }
 
+/* I feel I am a fool when I see the answer in the book.
+public static void main(String[] args) {
+        int N = Integer.parseInt(args[0]);
+        int[] x = new int[N];         // x positions
+        int[] y = new int[N];         // y positions
+        int cellsToVisit = N*N;       // cells left to visit
+        int steps = 0;                // number of steps taken
+        double r;
+        boolean[][] visited = new boolean[N][N];  // has the i-j been visited?
 
+        // start at center
+        for (int i = 0; i < N; i++) {
+            x[i] = N/2;
+            y[i] = N/2;
+        }
+        visited[N/2][N/2] = true;
+        cellsToVisit--;
+
+
+        // repeat until all cells have been visited
+        while (cellsToVisit > 0) {
+            steps++;
+
+            // move random walker i
+            for (int i = 0; i < N; i++) {
+                r = Math.random();
+                if      (r <= 0.25) x[i]++;
+                else if (r <= 0.50) x[i]--;
+                else if (r <= 0.75) y[i]++;
+                else if (r <= 1.00) y[i]--;
+
+                // check if (x[i], y[i]) is inside N-by-N boundary and has been visited
+                if (x[i] < N && y[i] < N && x[i] >= 0 && y[i] >= 0 && !visited[x[i]][y[i]]) {
+                    cellsToVisit--;
+                    visited[x[i]][y[i]] = true;
+                }
+            }
+        }
+
+        System.out.println(steps);
+    }
+ */
 
 }
