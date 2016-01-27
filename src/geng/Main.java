@@ -1,11 +1,17 @@
 package geng;
 
+import geng.charpter1.body.Rotation;
+import geng.charpter1.body.Surfer;
 import geng.charpter1.exercises.ArrayExercises;
+
+import java.io.IOException;
 
 
 public class Main {
 
     public static void main(String[] args) {
+
+
         // Flip coins
 //        Flip flip = new Flip(100);
 
@@ -29,7 +35,7 @@ public class Main {
 //        SelfAvoidingWalk selfAvoidingWalk = new SelfAvoidingWalk(20, 100);
 //        selfAvoidingWalk.walkOut();
 
-        ArrayExercises a = new ArrayExercises();
+//        ArrayExercises a = new ArrayExercises();
 //        a.oneD();
 //        a.putWhat(10);
 //        a.copy2DArray();
@@ -43,6 +49,10 @@ public class Main {
 //        a.findDuplicates(10);
 //        a.mineSweeper(5,5, 0.5);
 //        a.lengthOfSelfAvoid(100);
-        a.randomWalkers(10);
+//        a.randomWalkers(10);
+
+//        Rotation rotation = new Rotation(5);
+
+        Surfer surfer = new Surfer(100000);
     }
 }
