@@ -3,6 +3,7 @@ package geng;
 import geng.charpter1.body.Rotation;
 import geng.charpter1.body.Surfer;
 import geng.charpter1.exercises.ArrayExercises;
+import geng.charpter1.exercises.Markov;
 
 import java.io.IOException;
 
@@ -53,6 +54,7 @@ public class Main {
 
 //        Rotation rotation = new Rotation(5);
 
-        Surfer surfer = new Surfer(100000);
+//        Surfer surfer = new Surfer(100000);
+        Markov markov = new Markov(20);
     }
 }
