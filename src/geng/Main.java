@@ -1,11 +1,7 @@
 package geng;
 
-import geng.charpter1.body.Rotation;
-import geng.charpter1.body.Surfer;
-import geng.charpter1.exercises.ArrayExercises;
-import geng.charpter1.exercises.Markov;
-
-import java.io.IOException;
+import geng.charpter2.body.Gaussian;
+import geng.charpter2.body.Recursion;
 
 
 public class Main {
@@ -55,6 +51,31 @@ public class Main {
 //        Rotation rotation = new Rotation(5);
 
 //        Surfer surfer = new Surfer(100000);
-        Markov markov = new Markov(20);
+//        Markov markov = new Markov(20);
+
+//        double z = 820;
+//        double mu = 1019;
+//        double sigma = 209;
+//        StdOut.printf("%.3f\n", Gaussian.Phi((z - mu) / sigma));
+
+//        Functions.totient(20);
+
+//        Triangle triangle = new Triangle();
+//        int n = 50;
+//        double a[] = new double[n+1];
+//        for (int i = 0; i <= n; i++) {
+//            a[i] = Gaussian.phi(-4.0 + 8.0 * i / n);
+//        }
+//        StdStats.plotPoints(a);
+//        StdStats.plotLines(a);
+
+//        long result = Recursion.factorial(5);
+//        int result = Recursion.EuclidGcd(2342, 88);
+//        System.out.println(result);
+
+//        Recursion.Hanoi(4, true);
+//        Recursion.BeckettMove(4, true);
+//        Recursion.HTree(5, 0.5, 0.5, 0.5);
+//        Recursion.Brownian(0, 0.5, 1, 0.5, 0.01, Math.pow(2, 2*0.05));
     }
 }

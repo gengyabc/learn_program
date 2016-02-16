@@ -1,10 +1,7 @@
 package geng.charpter1.body;
 
 import geng.StdDraw;
-import geng.StdIn;
 import geng.StdOut;
-
-import java.io.*;
 
 /**
  * Created by yu on 2016-1-26.
