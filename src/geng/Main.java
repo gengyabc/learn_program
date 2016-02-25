@@ -1,7 +1,12 @@
 package geng;
 
+import geng.charpter1.exercises.ArrayExercises;
 import geng.charpter2.body.Gaussian;
+import geng.charpter2.body.Percolation;
 import geng.charpter2.body.Recursion;
+import geng.charpter2.exercises.PerExercises;
+
+import java.sql.ResultSet;
 
 
 public class Main {
@@ -70,6 +75,7 @@ public class Main {
 //        StdStats.plotLines(a);
 
 //        long result = Recursion.factorial(5);
+//        double result = Recursion.lnFac(5);
 //        int result = Recursion.EuclidGcd(2342, 88);
 //        System.out.println(result);
 
@@ -77,5 +83,21 @@ public class Main {
 //        Recursion.BeckettMove(4, true);
 //        Recursion.HTree(5, 0.5, 0.5, 0.5);
 //        Recursion.Brownian(0, 0.5, 1, 0.5, 0.01, Math.pow(2, 2*0.05));
+
+//        int N = 3;
+//        String alphabet = "abcdefghijklmnopq";
+//        String elements = alphabet.substring(0, N);
+//        Recursion.perm2(elements);
+//        Recursion.permK(alphabet,4, 2);
+//        Recursion.combination(elements);
+//        Recursion.comb2(elements);
+//        Percolation.visualize(20, 0.9, 1);
+//        Percolation.eval(20, 0.85, 1000);
+//        Percolation.visualize(20, 0.55, 1);
+//        Percolation.curve(20, 0,0,1,1);
+//        PerExercises.reletivePrime(10);
+        PerExercises.hadamard(2);
+
+
     }
 }
